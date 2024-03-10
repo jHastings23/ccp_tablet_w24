@@ -1,0 +1,134 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+nav ul li.current-page a {
+    background-color: #555;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+}
+
+.grid-container > div {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    img, * {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Tablet-specific styles go here */
+
+    .grid-container {
+        /* For tablets, we can go for a 2-column layout instead of a 1-column layout */
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* You may also want to adjust padding, margins, or font sizes for tablet screens here */
+    header, nav, main, footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    body {
+        /* Slightly larger text for easier reading on tablets */
+        font-size: 18px;
+    }
+
+    nav ul li {
+        /* More space between navigation links on a tablet */
+        margin-right: 30px;
+    }
+
+    /* ... add any other tablet-specific adjustments here ... */
+}
