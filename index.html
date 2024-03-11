@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Home</title>
     <style>
-        /* Additional CSS for grid layout */
+        
         .grid-container {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -109,7 +109,7 @@
     </footer>
     <button id="backToTop" onclick="scrollToTop()" style="display:none;">Back to Top</button>
     <script>
-        // When the user scrolls down 20px from the top of the document, show the button
+      
         window.onscroll = function() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("backToTop").style.display = "block";
@@ -118,7 +118,7 @@
             }
         };
     
-        // When the user clicks on the button, scroll to the top of the document
+       
         function scrollToTop() {
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
