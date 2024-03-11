@@ -22,10 +22,11 @@ div p {
 }
 h1 {
     background-color: #FF6F61; /* Coral color */
-    color: #ffffff; /* White text for good contrast */
+    color: #003366; /* Dark blue text for good contrast */
     padding: 5px;
     border-radius: 5px;
 }
+
 
 h2 {
     background-color: #AEC6CF; /* Pastel blue */
